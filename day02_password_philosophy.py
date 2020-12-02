@@ -29,3 +29,19 @@ def star1_valid_passwords():
         except:
             pass
     return validCount
+
+def star2_more_valid_passwords():
+    pwlist = loadData(DAY).split("\n")
+    parser = re.compile("^([0-9]+)-([0-9]+) ([a-z]): (.*)$") 
+    validCount = 0
+    for pwline in pwlist:
+        try:
+            le, he, let, pw = parser.match(pwline).groups()
+            lei, hei = int(le), int(he)
+            letCount = len([a for a in [pw[lei-1],pw[hei-1]] if a==let[0]])
+            if letCount==1:
+                validCount+=1
+                print("{} has exactly 1 {}, which is between character positions {} and {}.".format(pw, let, lei, hei))
+        except:
+            pass
+    return validCount
