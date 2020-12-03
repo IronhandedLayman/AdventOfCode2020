@@ -24,11 +24,16 @@ I have a bit of reuse of functions, and a pretty solid structure to the problem 
 
 I decided for posterity sake to keep the current rankings in place. I had a meeting right before this, so I didn't track to see how long it actually took me to read and work through the problem. Nor do I expect to always be up at midnight to race to get a solution in place. I only want to be sure I do every problem this year and stick with it. I do know they get harder and it may not be possible to solve some of them as I go down the tree. I want to give it a good go this year. So far it has been quite smooth.
 
+## Dec03 - Toboggan Trajectory
+
+Today was just following the rules; literally you follow the path of the toboggan as it goes through the different angles. I feel like they could have made the problem a little more interesting by allowing you to steer and hit as few trees as possible, but it is still early in the competition and really this is all about being able to read the input in the given formats and just get a feel for the competition format. I had some good code structure that allowed me to exploit some of the code I wrote in part 1 for part 2. Knowing I didnt have to overoptimize was also a good thing, as it would have cost me time. Even so, I am not so fast with the fingers as I need to be. And I had a couple of unforced errors; I didn't save my file as quickly as I wanted, and I also misnamed it, which is awkward. I will get that better next time. It is now time to also allow the file pulling code to come out and be imported instead of copy-pasting it from run to run. But, I also need some sleep. I will do that tomorrow prior to the compeititon time.
+
 Current rankings:
 -----------------
 ```
-    -------Part 1--------   -------Part 2--------
+      -------Part 1--------   -------Part 2--------
 Day       Time  Rank  Score       Time  Rank  Score
+  3   00:12:18  3077      0   00:16:01  2243      0
   2   00:18:05  4058      0   00:23:09  3541      0
-  1   00:35:40  4612      0   00:42:25  4411      0
+  1   00:35:40  4612      0   00:42:25  4411      0 
 ```
