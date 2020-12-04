@@ -28,12 +28,20 @@ I decided for posterity sake to keep the current rankings in place. I had a meet
 
 Today was just following the rules; literally you follow the path of the toboggan as it goes through the different angles. I feel like they could have made the problem a little more interesting by allowing you to steer and hit as few trees as possible, but it is still early in the competition and really this is all about being able to read the input in the given formats and just get a feel for the competition format. I had some good code structure that allowed me to exploit some of the code I wrote in part 1 for part 2. Knowing I didnt have to overoptimize was also a good thing, as it would have cost me time. Even so, I am not so fast with the fingers as I need to be. And I had a couple of unforced errors; I didn't save my file as quickly as I wanted, and I also misnamed it, which is awkward. I will get that better next time. It is now time to also allow the file pulling code to come out and be imported instead of copy-pasting it from run to run. But, I also need some sleep. I will do that tomorrow prior to the compeititon time.
 
+## Dec04 - Passport Processing
+
+Today was a disaster LOL.
+The problem is a minefield of corner cases. If I had hair I'd be tearing it out. I was caught on one corner after another. And it didn't help that my code was inefficient. I cannibalized star1 to solve star 2 even. I missed that for regular expressions, I needed complete matches (submatches were getting through); I screwed up checking of intervals; I missed checking to see if there was an in or cm at the end of height (just that if it did, I checked the bounds). Oh man that was humbling.
+
+At least I got to use a for-else clause. I will play during the day on Saturday. Not staying up again, that was insane.
+
 Current rankings:
 -----------------
 ```
-      -------Part 1--------   -------Part 2--------
+    -------Part 1--------   -------Part 2--------
 Day       Time  Rank  Score       Time  Rank  Score
+  4   00:32:16  6206      0   01:10:07  5107      0
   3   00:12:18  3077      0   00:16:01  2243      0
   2   00:18:05  4058      0   00:23:09  3541      0
-  1   00:35:40  4612      0   00:42:25  4411      0 
+  1   00:35:40  4612      0   00:42:25  4411      0
 ```
