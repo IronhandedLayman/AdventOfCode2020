@@ -35,7 +35,7 @@ The problem is a minefield of corner cases. If I had hair I'd be tearing it out.
 
 At least I got to use a for-else clause. I will play during the day on Saturday. Not staying up again, that was insane.
 
-## Dec05 - 
+## Dec05 - Binary Boarding
 
 Decided to do the problem nice and calmly during the day, started at 12:47 (why my rank is ridiculously high). It was pretty easy. So each seat is designated with F and B for front and back, and L and R for left and right. Here is the fun part, and probably the trick: the id for the seat is the row (first 8 characters) * 8 + column (last 3 chars). If you translate F to 0, B to 1, L to 0, and R to 1, then you have the id in binary, and python has a function for that! int takes a radix as a second parameter which you can use for 16 or 8 or 2 (or even 13 if you are Conway). So that made the seat calculation easy. Well sorta, of course I flipped left and right, so I had to write tests to find my bug (which was L as 1 and R as 0 instead of L as 0 and R as 1). Fun part about the tests was that it was my first chance to try out the walrus operator. I didn't want to dig out the python testing framework (it's easy but wasn't on top of my mind at the time) and besides I wanted an excuse to use it. It works pretty well! I will keep it in my back pocket for future use, knowing it is only a python3.8 invention (controversy be damned :D). The second part was really easy to spell out, literally translating what the instructions said: look for the only possible seat between the low and high that isn't there but the seat previous and the seat following are there. Took me 5 minutes.
 
