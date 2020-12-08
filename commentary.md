@@ -49,11 +49,19 @@ AHA this one was a blast! I did it at the end of the day, after a really terribl
 
 Okay so then I had a bug on star 2: turns out my answer was too high... I pounded my head against it until I tested one of the examples and got 127 instead of 126. DUH. It said how many bags the shiny gold bag CONTAINED, not how many bags you have including the shiny gold bag. They got me on my own recursion LOL. I added the minus 1 at the end of star2() instead of trying to fix the recursion somehow so I counted right instead of overcounting (not to mention I'm not sure how you'd do that).
 
-Current rankings:
+## Dec08 - Handheld Halting
+
+This one was pretty good too! The first part was a simulation problem with a detector for an infinite loop. Personally I think they should have come up with some way to make the input larger or the computational cost more expensive, so that infinite loop detection was harder, but I digress. The second part was to detect the problems with the code, by flipping a single instruction. It really proves out that your code is structured well that you can do this efficiently and cleanly. It would have been more interesting if you had to flip two instructions instead of one, but here I wondered how you generate a puzzle input such that exactly one flip would cause no infinite loop. It would be a far harder problem to be sure.
+
+Unrelated to the problem: I just leared that my time on part 2 doesn't show up if it arrives after 24h. Bah. Okay maybe I will do the sacrifice and solve the problem at midnight going forward. I also changed ranking to stats, as I am not worried about rank, just about what time of day I did the problem and the delta between stars.
+
+Personal stats:
 -----------------
 ```
-             --------Part 1--------   --------Part 2--------
+      --------Part 1--------   --------Part 2--------
 Day       Time   Rank  Score       Time   Rank  Score
+  8   10:12:03  32368      0   10:21:14  27679      0
+  7   23:56:59  42920      0       >24h  37857      0
   6   22:05:28  51285      0   22:08:27  49478      0
   5   13:00:24  39356      0   13:05:18  37738      0
   4   00:32:16   6206      0   01:10:07   5107      0
