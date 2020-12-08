@@ -43,6 +43,12 @@ Decided to do the problem nice and calmly during the day, started at 12:47 (why 
 
 This one was easy once I had the form. The first part was simply going over each group, marking when someone said yes in the group using a dictionary, then counting all of the yes-es. To flip it, I just walked all letters, counted all the times someone said no, and subtracted from 26 the number of no's. Piece of cake. My variable names are a disaster, but I would have been more explicit if I needed to hunt down a bug. It took me all of 5 minutes again. I'm waiting for some harder puzzles (tempting fate at the same time). I may also tackle more of these problems at releast time (for me, midnight) once I go on staycation (love you pandemic). This one was late because I was putting up a real tree. :D Happy holidays!
 
+## Dec07 - Handy Haversacks
+
+AHA this one was a blast! I did it at the end of the day, after a really terrible day at work in which I have a lot more to do. I still feel exhausted but it was still a lot of fun. Okay, so there were several parts to this puzzle: first the parsing, which I handled through some basic recursive descent (and save for a couple of bugs I feel pretty good about how I did it, because it was super simple to test), and then the tree creation. I wanted a simple token format (a dictionary natch) and then a way to walk the tree up and down. So I created an updown tree: a dictionary of bag types pointing to the bags they contain, and a dictionary of bags point to a list of trees that could contain them. Then I walked the first star using a bfs on the second dictionary, and I walked the second star with recursion on the first dictionary.
+
+Okay so then I had a bug on star 2: turns out my answer was too high... I pounded my head against it until I tested one of the examples and got 127 instead of 126. DUH. It said how many bags the shiny gold bag CONTAINED, not how many bags you have including the shiny gold bag. They got me on my own recursion LOL. I added the minus 1 at the end of star2() instead of trying to fix the recursion somehow so I counted right instead of overcounting (not to mention I'm not sure how you'd do that).
+
 Current rankings:
 -----------------
 ```
